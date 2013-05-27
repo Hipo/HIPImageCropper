@@ -1,0 +1,369 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC98C4CB1753888B004BBE0D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC98C4CA1753888B004BBE0D /* UIKit.framework */; };
+		EC98C4CD1753888B004BBE0D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC98C4CC1753888B004BBE0D /* Foundation.framework */; };
+		EC98C4CF1753888B004BBE0D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC98C4CE1753888B004BBE0D /* CoreGraphics.framework */; };
+		EC98C4F5175393D5004BBE0D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC98C4F4175393D5004BBE0D /* QuartzCore.framework */; };
+		EC98C5101753A858004BBE0D /* HIPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC98C4F81753A858004BBE0D /* HIPAppDelegate.m */; };
+		EC98C5111753A858004BBE0D /* HIPRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC98C4FA1753A858004BBE0D /* HIPRootViewController.m */; };
+		EC98C5121753A858004BBE0D /* HIPImageCropperView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC98C4FE1753A858004BBE0D /* HIPImageCropperView.m */; };
+		EC98C5141753A858004BBE0D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC98C5021753A858004BBE0D /* Default-568h@2x.png */; };
+		EC98C5151753A858004BBE0D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = EC98C5031753A858004BBE0D /* Default.png */; };
+		EC98C5161753A858004BBE0D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC98C5041753A858004BBE0D /* Default@2x.png */; };
+		EC98C5171753A858004BBE0D /* landscape-wide.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EC98C5061753A858004BBE0D /* landscape-wide.jpg */; };
+		EC98C5181753A858004BBE0D /* landscape.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EC98C5071753A858004BBE0D /* landscape.jpg */; };
+		EC98C5191753A858004BBE0D /* portrait.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EC98C5081753A858004BBE0D /* portrait.jpg */; };
+		EC98C51A1753A858004BBE0D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC98C50A1753A858004BBE0D /* InfoPlist.strings */; };
+		EC98C51C1753A858004BBE0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC98C50F1753A858004BBE0D /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EC98C4C71753888B004BBE0D /* HIPImageCropper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HIPImageCropper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC98C4CA1753888B004BBE0D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EC98C4CC1753888B004BBE0D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EC98C4CE1753888B004BBE0D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EC98C4F4175393D5004BBE0D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		EC98C4F71753A858004BBE0D /* HIPAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HIPAppDelegate.h; sourceTree = "<group>"; };
+		EC98C4F81753A858004BBE0D /* HIPAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HIPAppDelegate.m; sourceTree = "<group>"; };
+		EC98C4F91753A858004BBE0D /* HIPRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HIPRootViewController.h; sourceTree = "<group>"; };
+		EC98C4FA1753A858004BBE0D /* HIPRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HIPRootViewController.m; sourceTree = "<group>"; };
+		EC98C4FD1753A858004BBE0D /* HIPImageCropperView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HIPImageCropperView.h; sourceTree = "<group>"; };
+		EC98C4FE1753A858004BBE0D /* HIPImageCropperView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HIPImageCropperView.m; sourceTree = "<group>"; };
+		EC98C5021753A858004BBE0D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		EC98C5031753A858004BBE0D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		EC98C5041753A858004BBE0D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		EC98C5061753A858004BBE0D /* landscape-wide.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "landscape-wide.jpg"; sourceTree = "<group>"; };
+		EC98C5071753A858004BBE0D /* landscape.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = landscape.jpg; sourceTree = "<group>"; };
+		EC98C5081753A858004BBE0D /* portrait.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = portrait.jpg; sourceTree = "<group>"; };
+		EC98C50B1753A858004BBE0D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EC98C50D1753A858004BBE0D /* HIPImageCropper-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "HIPImageCropper-Info.plist"; sourceTree = "<group>"; };
+		EC98C50E1753A858004BBE0D /* HIPImageCropper-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HIPImageCropper-Prefix.pch"; sourceTree = "<group>"; };
+		EC98C50F1753A858004BBE0D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC98C4C41753888B004BBE0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC98C4F5175393D5004BBE0D /* QuartzCore.framework in Frameworks */,
+				EC98C4CB1753888B004BBE0D /* UIKit.framework in Frameworks */,
+				EC98C4CD1753888B004BBE0D /* Foundation.framework in Frameworks */,
+				EC98C4CF1753888B004BBE0D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC98C4BE1753888B004BBE0D = {
+			isa = PBXGroup;
+			children = (
+				EC98C4F61753A858004BBE0D /* Classes */,
+				EC98C4FB1753A858004BBE0D /* Dependencies */,
+				EC98C5001753A858004BBE0D /* Resources */,
+				EC98C50C1753A858004BBE0D /* Sources */,
+				EC98C4C91753888B004BBE0D /* Frameworks */,
+				EC98C4C81753888B004BBE0D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC98C4C81753888B004BBE0D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC98C4C71753888B004BBE0D /* HIPImageCropper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC98C4C91753888B004BBE0D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC98C4F4175393D5004BBE0D /* QuartzCore.framework */,
+				EC98C4CA1753888B004BBE0D /* UIKit.framework */,
+				EC98C4CC1753888B004BBE0D /* Foundation.framework */,
+				EC98C4CE1753888B004BBE0D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC98C4F61753A858004BBE0D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EC98C4F71753A858004BBE0D /* HIPAppDelegate.h */,
+				EC98C4F81753A858004BBE0D /* HIPAppDelegate.m */,
+				EC98C4F91753A858004BBE0D /* HIPRootViewController.h */,
+				EC98C4FA1753A858004BBE0D /* HIPRootViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		EC98C4FB1753A858004BBE0D /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				EC98C4FC1753A858004BBE0D /* HIPImageCropperView */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		EC98C4FC1753A858004BBE0D /* HIPImageCropperView */ = {
+			isa = PBXGroup;
+			children = (
+				EC98C4FD1753A858004BBE0D /* HIPImageCropperView.h */,
+				EC98C4FE1753A858004BBE0D /* HIPImageCropperView.m */,
+			);
+			path = HIPImageCropperView;
+			sourceTree = "<group>";
+		};
+		EC98C5001753A858004BBE0D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EC98C5011753A858004BBE0D /* Icons */,
+				EC98C5051753A858004BBE0D /* Images */,
+				EC98C5091753A858004BBE0D /* Localization */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EC98C5011753A858004BBE0D /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				EC98C5021753A858004BBE0D /* Default-568h@2x.png */,
+				EC98C5031753A858004BBE0D /* Default.png */,
+				EC98C5041753A858004BBE0D /* Default@2x.png */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
+		EC98C5051753A858004BBE0D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				EC98C5061753A858004BBE0D /* landscape-wide.jpg */,
+				EC98C5071753A858004BBE0D /* landscape.jpg */,
+				EC98C5081753A858004BBE0D /* portrait.jpg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		EC98C5091753A858004BBE0D /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				EC98C50A1753A858004BBE0D /* InfoPlist.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		EC98C50C1753A858004BBE0D /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EC98C50D1753A858004BBE0D /* HIPImageCropper-Info.plist */,
+				EC98C50E1753A858004BBE0D /* HIPImageCropper-Prefix.pch */,
+				EC98C50F1753A858004BBE0D /* main.m */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC98C4C61753888B004BBE0D /* HIPImageCropper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC98C4E41753888B004BBE0D /* Build configuration list for PBXNativeTarget "HIPImageCropper" */;
+			buildPhases = (
+				EC98C4C31753888B004BBE0D /* Sources */,
+				EC98C4C41753888B004BBE0D /* Frameworks */,
+				EC98C4C51753888B004BBE0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HIPImageCropper;
+			productName = HIPImageCropper;
+			productReference = EC98C4C71753888B004BBE0D /* HIPImageCropper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC98C4BF1753888B004BBE0D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = HIP;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Hipo;
+			};
+			buildConfigurationList = EC98C4C21753888B004BBE0D /* Build configuration list for PBXProject "HIPImageCropper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EC98C4BE1753888B004BBE0D;
+			productRefGroup = EC98C4C81753888B004BBE0D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC98C4C61753888B004BBE0D /* HIPImageCropper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC98C4C51753888B004BBE0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC98C5141753A858004BBE0D /* Default-568h@2x.png in Resources */,
+				EC98C5151753A858004BBE0D /* Default.png in Resources */,
+				EC98C5161753A858004BBE0D /* Default@2x.png in Resources */,
+				EC98C5171753A858004BBE0D /* landscape-wide.jpg in Resources */,
+				EC98C5181753A858004BBE0D /* landscape.jpg in Resources */,
+				EC98C5191753A858004BBE0D /* portrait.jpg in Resources */,
+				EC98C51A1753A858004BBE0D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC98C4C31753888B004BBE0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC98C5101753A858004BBE0D /* HIPAppDelegate.m in Sources */,
+				EC98C5111753A858004BBE0D /* HIPRootViewController.m in Sources */,
+				EC98C5121753A858004BBE0D /* HIPImageCropperView.m in Sources */,
+				EC98C51C1753A858004BBE0D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EC98C50A1753A858004BBE0D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC98C50B1753A858004BBE0D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC98C4E21753888B004BBE0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EC98C4E31753888B004BBE0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC98C4E51753888B004BBE0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sources/HIPImageCropper-Prefix.pch";
+				INFOPLIST_FILE = "Sources/HIPImageCropper-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EC98C4E61753888B004BBE0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sources/HIPImageCropper-Prefix.pch";
+				INFOPLIST_FILE = "Sources/HIPImageCropper-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC98C4C21753888B004BBE0D /* Build configuration list for PBXProject "HIPImageCropper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC98C4E21753888B004BBE0D /* Debug */,
+				EC98C4E31753888B004BBE0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC98C4E41753888B004BBE0D /* Build configuration list for PBXNativeTarget "HIPImageCropper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC98C4E51753888B004BBE0D /* Debug */,
+				EC98C4E61753888B004BBE0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC98C4BF1753888B004BBE0D /* Project object */;
+}
