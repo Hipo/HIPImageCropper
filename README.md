@@ -8,6 +8,9 @@ A reusable image cropping and scaling interface for iOS, similar to Instagram's 
 * Support for all orientations and autoresizing
 * Support for customized cropping area dimensions
 * Quartz-drawn iOS camera capture style overlay
+* Automatically snaps photo to the edges
+
+Here is a screenshot of the demo app that uses a basic "Capture" button: <http://cl.ly/image/203u0Q3J0J2t>.
 
 
 Requirements
