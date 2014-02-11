@@ -29,5 +29,5 @@ HIPImageCropper is brought to you by the [Hipo Team](http://hipo.biz).
 License
 -------
 
-HPSocialNetworkManager is licensed under the terms of the Apache License, 
+HIPImageCropper is licensed under the terms of the Apache License, 
 version 2.0. Please see the LICENSE file for full details.
