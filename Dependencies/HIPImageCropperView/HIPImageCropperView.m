@@ -16,6 +16,7 @@
 @property (nonatomic, readwrite, strong) UIScrollView *scrollView;
 @property (nonatomic, readwrite, strong) UIImageView *imageView;
 @property (nonatomic, readwrite, strong) UIView *overlayView;
+@property CGSize cropSize;
 
 - (void)updateOverlay;
 
@@ -36,6 +37,7 @@
     [self setBackgroundColor:[UIColor blackColor]];
     [self setAutoresizingMask:(UIViewAutoresizingFlexibleWidth |
                                UIViewAutoresizingFlexibleHeight)];
+    self.cropSize = cropSize;
     
     self.scrollView = [[UIScrollView alloc] initWithFrame:
                        CGRectInset(self.bounds, (frame.size.width - cropSize.width) / 2,
@@ -86,15 +88,16 @@
     
     CGFloat zoomScale = 1.0;
     
-    if (self.imageView.frame.size.width < self.imageView.frame.size.height) {
-        zoomScale = (self.scrollView.frame.size.width / self.imageView.frame.size.width);
-    } else {
-        zoomScale = (self.scrollView.frame.size.height / self.imageView.frame.size.height);
+    if(self.cropSize.width >= self.cropSize.height) {
+        zoomScale = self.cropSize.width / self.imageView.frame.size.width;
+    }
+    else {
+        zoomScale = self.cropSize.height / self.imageView.frame.size.height;
     }
     
     [self.scrollView setContentSize:self.imageView.frame.size];
     [self.scrollView setMinimumZoomScale:zoomScale];
-    [self.scrollView setMaximumZoomScale:1.0];
+    [self.scrollView setMaximumZoomScale:2.0 * zoomScale];
     [self.scrollView setZoomScale:zoomScale];
     [self.scrollView setContentOffset:CGPointMake((self.imageView.frame.size.width - self.scrollView.frame.size.width) / 2,
                                                   (self.imageView.frame.size.height - self.scrollView.frame.size.height) / 2)];
