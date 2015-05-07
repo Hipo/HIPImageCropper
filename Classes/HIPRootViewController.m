@@ -14,7 +14,9 @@
 
 @property (nonatomic, strong) HIPImageCropperView *cropperView;
 @property (nonatomic, strong) UIImageView *imageView;
+@property (nonatomic, strong) NSArray *photoButtons;
 
+- (void)didTapPhotoButton:(id)sender;
 - (void)didTapCaptureButton:(id)sender;
 
 - (void)gestureRecognizerDidTap:(UIGestureRecognizer *)tapRecognizer;
@@ -41,14 +43,14 @@
     
     CGRect screenSize = [[UIScreen mainScreen] bounds];
     
-    self.cropperView = [[HIPImageCropperView alloc]
-                        initWithFrame:self.view.bounds
-                        cropAreaSize:CGSizeMake(screenSize.size.width - 40.0,
-                                                screenSize.size.width - 40.0)];
+    _cropperView = [[HIPImageCropperView alloc]
+                    initWithFrame:self.view.bounds
+                    cropAreaSize:CGSizeMake(300.0, 300.0)
+                    position:HIPImageCropperViewPositionCenter];
     
-    [self.cropperView setImage:[UIImage imageNamed:@"portrait.jpg"]];
+    [self.view addSubview:_cropperView];
     
-    [self.view addSubview:self.cropperView];
+    [_cropperView setOriginalImage:[UIImage imageNamed:@"portrait.jpg"]];
     
     UIButton *captureButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     
@@ -66,9 +68,71 @@
             forControlEvents:UIControlEventTouchUpInside];
     
     [self.view addSubview:captureButton];
+    
+    NSMutableArray *photoButtons = [NSMutableArray array];
+    CGFloat buttonSize = screenSize.size.width / 3.0;
+    
+    for (NSUInteger i = 0; i < 3; i++) {
+        UIButton *photoButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        
+        [photoButton addTarget:self
+                        action:@selector(didTapPhotoButton:)
+              forControlEvents:UIControlEventTouchUpInside];
+        
+        [photoButton setFrame:CGRectMake(i * buttonSize, 0.0, buttonSize, 50.0)];
+        
+        NSString *buttonTitle = nil;
+        
+        switch (i) {
+            case 0:
+                buttonTitle = NSLocalizedString(@"Portrait", nil);
+                break;
+            case 1:
+                buttonTitle = NSLocalizedString(@"Landscape", nil);
+                break;
+            case 2:
+                buttonTitle = NSLocalizedString(@"Wide", nil);
+                break;
+            default:
+                break;
+        }
+
+        [photoButton setTitle:buttonTitle forState:UIControlStateNormal];
+
+        [self.view addSubview:photoButton];
+        
+        [photoButtons addObject:photoButton];
+    }
+    
+    _photoButtons = [[NSArray alloc] initWithArray:photoButtons];
 }
 
 #pragma mark - Button actions
+
+- (void)didTapPhotoButton:(id)sender {
+    NSUInteger buttonIndex = [_photoButtons indexOfObject:sender];
+    NSString *resourceName = nil;
+    
+    switch (buttonIndex) {
+        case 0:
+            resourceName = @"portrait.jpg";
+            break;
+        case 1:
+            resourceName = @"landscape.jpg";
+            break;
+        case 2:
+            resourceName = @"landscape-wide.jpg";
+            break;
+        default:
+            break;
+    }
+    
+    if (resourceName == nil) {
+        return;
+    }
+    
+    [self.cropperView setOriginalImage:[UIImage imageNamed:resourceName]];
+}
 
 - (void)didTapCaptureButton:(id)sender {
     if (self.imageView != nil) {
